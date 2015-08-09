@@ -1,8 +1,12 @@
 module.exports = function(obj, mod, deep){
     deep = deep !== false
     try {
-        if (typeof mod == 'string' && fs.existsSync(mod)){
-            mod = require(mod)
+        if (typeof mod == 'string'){
+            if (fs.existsSync(mod)){
+                mod = require(mod)
+            } else {
+                return obj
+            }
         }
 
         obj = typeof mod == 'function'
