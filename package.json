@@ -1,0 +1,19 @@
+{
+  "name": "extend-or-modify",
+  "version": "1.0.0",
+  "description": "Modifies or extends object",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whitecolor/extend-or-modify.git"
+  },
+  "author": "whitecolor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whitecolor/extend-or-modify/issues"
+  },
+  "homepage": "https://github.com/whitecolor/extend-or-modify#readme"
+}
