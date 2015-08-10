@@ -2,6 +2,7 @@ module.exports = function(obj, mod, deep){
     deep = deep !== false
     try {
         if (typeof mod == 'string'){
+            mod = require('path').resolve(mod)
             if (require('fs').existsSync(mod)){
                 mod = require(mod)
             } else {
