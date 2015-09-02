@@ -1,5 +1,10 @@
 var tape = require('tape'),
-    extendOrModify = require('./index.js')
+    tapSpec = require('tap-spec'),
+    extendOrModify = require('../index.js')
+
+tape.createStream()
+  .pipe(tapSpec())
+  .pipe(process.stdout)
 
 var config = {
     SOME_VAR: 'yeah',
@@ -9,7 +14,7 @@ var config = {
 }
 
 tape.test('test deep extend with config object', function(t){
-    var result = extendOrModify(config, 'test-config-obj.js')
+    var result = extendOrModify(config, 'test/test-config-obj.js')
     console.log(result)
     t.ok(result.dev.SOME_DEV_VAR == 'yeah', 'SOME_DEV_VAR')
     t.ok(result.dev.NEW_DEV_VAR == 'cool', 'NEW_DEV_VAR')

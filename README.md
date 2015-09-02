@@ -1,6 +1,9 @@
-#Example
+# Extend-or-modify ![](https://travis-ci.org/Alex0007/extend-or-modify.svg)
+Modifies or extends object
 
-```
+## Example
+
+```javascript
 var config = {
     some: 'defaultValue'
 }
