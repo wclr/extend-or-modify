@@ -1,6 +1,6 @@
 # Extend-or-modify ![](https://travis-ci.org/whitecolor/extend-or-modify.svg)
 Modifies or extends object
-
+ 
 ## Example
 
 ```javascript
